@@ -103,3 +103,7 @@ You can use `stew` to install the pre-built GitHub releases binaries.
 ```bash
 stew install 6km/splitt
 ```
+
+# License
+
+Licensed under the MIT license.
