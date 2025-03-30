@@ -4,7 +4,6 @@ description = "Split text in your terminal"
 version = "0.1.0"
 edition = "2024"
 license = "MIT"
-license-file = "LICENSE"
 repository = "https://github.com/6km/splitt"
 readme = "README.md"
 keywords = ["macos", "linux", "cli", "tools", "tool", "text", "split", "text-processing"]
