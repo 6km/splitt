@@ -10,5 +10,9 @@ readme = "README.md"
 keywords = ["macos", "linux", "cli", "tools", "tool", "text", "split", "text-processing"]
 categories = ["command-line-utilities"]
 
+[[bin]]
+path = "src/main.rs"
+name = "splitt"
+
 [dependencies]
 clap = {version="4.5.34", features=["derive"]}
