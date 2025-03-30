@@ -4,7 +4,7 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
+  publish-to-crates:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,6 +17,8 @@ jobs:
     - uses: actions/checkout@v4
     - run: rustup update ${{ matrix.toolchain }} && rustup default ${{ matrix.toolchain }}
     - name: Build
-      run: cargo build --release --verbose
+      run: cargo build --verbose
     - name: Run tests
       run: cargo test --verbose
+    - name: Publish to crates.io
+      run: cargo publish
